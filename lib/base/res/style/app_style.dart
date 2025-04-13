@@ -7,6 +7,7 @@ class AppStyle {
   static Color primaryColor = primary;
   static Color textColor = Color(0xff3d3d3d);
   static Color secondary1 = secondary;
+  static Color ticketBlue = Color(0xFF526799);
 
   static TextStyle headingText1 =
       TextStyle(fontSize: 26, fontWeight: FontWeight.w500, color: textColor);

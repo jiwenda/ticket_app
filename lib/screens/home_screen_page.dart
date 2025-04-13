@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ticket_app/base/res/media/app_media.dart';
 import 'package:ticket_app/base/res/style/app_style.dart';
 import 'package:ticket_app/base/widgets/app_double_text.dart';
+import 'package:ticket_app/base/widgets/ticket_view.dart';
 
 class HomeScreenPage extends StatelessWidget {
   const HomeScreenPage({super.key});
@@ -65,15 +66,19 @@ class HomeScreenPage extends StatelessWidget {
                     ],
                   ),
                 ),
+                SizedBox(
+                  height: 40,
+                ),
+                AppDoubleText(
+                  bigText: 'Upcomming Bus',
+                  smallText: 'View all',
+                ),
+
+                //page of ticket view,
+
+                TicketView(),
               ],
             ),
-          ),
-          SizedBox(
-            height: 40,
-          ),
-          AppDoubleText(
-            bigText: 'Upcomming Bus',
-            smallText: 'View all',
           ),
         ],
       ),

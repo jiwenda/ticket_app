@@ -19,10 +19,14 @@ class AppDoubleText extends StatelessWidget {
             bigText,
             style: AppStyle.headingText1,
           ),
-          Text(
-            smallText,
-            style: AppStyle.headingText3,
-          )
+          InkWell(
+            onTap: () {},
+            child: Text(
+              smallText,
+              style:
+                  AppStyle.headingText3.copyWith(color: AppStyle.primaryColor),
+            ),
+          ),
         ],
       ),
     );
